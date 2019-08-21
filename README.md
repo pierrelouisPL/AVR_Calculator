@@ -43,11 +43,11 @@ you can get the code of a pressed key with int pressedKey() function
  - codes 0 to 9 refer to digit keys
  - code 100 is returned when no key is pressed
  - codes 101 to 105 refer to function keys as follows
-         - 101 => +
-         - 102 => -
-         - 103 => C
-         - 104 => =
-         - 105 => CE
+         * 101 => +
+         * 102 => -
+         * 103 => C
+         * 104 => =
+         * 105 => CE
 
 3. calculator works only for non-negative integers lower than 10,000. Negative values are not accepted by the device
 there are however NO ERROR MESSAGES for this and you should expect nonsense when you try to perform operations like e.g. 100 - 200 = ?
