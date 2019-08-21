@@ -1,7 +1,10 @@
 #ifndef _8SEG_H_
 #define _8SEG_H_
 
+#define F_CPU 8000000UL
+
 #include <avr/io.h>
+#include <util/delay.h>
 
 // const. description in pdf documentation
 #define PORTB_MASK 0x3E
@@ -147,7 +150,7 @@ void displayDigits(int digits[4]) {
 	for (int i = 0; i < 4; i++) {
 		selectDisplay(i);
 		displayDigit(digits[i]);
-		_delay_us(300);
+		_delay_ms(1);
 	}
 }
 
